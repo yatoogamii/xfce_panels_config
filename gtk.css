@@ -1,0 +1,77 @@
+@import url("colors.css");
+
+.xfce4-panel {
+    box-shadow: none;
+}
+
+.xfce4-panel button {
+    background-color: unset;
+}
+
+.xfce4-panel button:hover {
+    background-color: @bg-color-shade-2;
+}
+
+.xfce4-panel label {
+    background-color: unset;
+}
+
+.xfce4-panel label:hover {
+    background-color: @bg-color-shade-2;
+}
+
+tooltip {
+    background-color: @bg-color-shade-2;
+}
+
+/* Audio */
+#pulseaudio-button * {
+    -gtk-icon-transform: scale(.7);
+}
+
+/* whiskermenu */
+.xfce4-panel #whiskermenu-button label {
+    background-color: @color-white-3;
+    color: @bg-color-shade-1;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 23px;
+}
+
+/* windows menu */
+.xfce4-panel #tasklist-10 .horizontal button {
+    border-top: 4px solid unset;
+    border-bottom: 4px solid unset;
+
+}
+
+.xfce4-panel #tasklist-10 .horizontal button:checked {
+    border-top: 4px solid unset;
+    border-bottom: 4px solid @color-white-3;
+
+}
+
+.tasklist button image {
+    -gtk-icon-theme: 'Nordic-Darker';
+    -gtk-icon-transform: scale(0.75);
+}
+
+
+.tasklist button:checked image {
+    -gtk-icon-transform: scale(0.75);
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    to {
+        -gtk-icon-transform: scale(0.75) rotate(1turn);
+    }
+}
+
+/* repozen */
+#genmon-7 image {
+    padding: 0 20px;
+}
