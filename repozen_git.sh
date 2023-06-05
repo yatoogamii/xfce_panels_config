@@ -5,7 +5,7 @@ source ~/.config/xfce4/panel/colors.sh
 
 # Panel
 INFO+="<img>/home/elias/.config/xfce4/panel/repozen_x16.png</img>"
-INFO+="<click>xfce4-terminal</click>"
+INFO+="<click>firefox-developer-edition -new-tab "https://gitlab.repozen.fr/"</click>"
 
 
 # Tooltip
