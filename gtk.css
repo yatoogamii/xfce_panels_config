@@ -5,18 +5,10 @@
 }
 
 .xfce4-panel button {
-    background-color: unset;
+    background-color: @bg-color-shade-1;
 }
 
 .xfce4-panel button:hover {
-    background-color: @bg-color-shade-2;
-}
-
-.xfce4-panel label {
-    background-color: unset;
-}
-
-.xfce4-panel label:hover {
     background-color: @bg-color-shade-2;
 }
 
@@ -31,8 +23,7 @@ tooltip {
 
 /* whiskermenu */
 .xfce4-panel #whiskermenu-button label {
-    background-color: @color-white-3;
-    color: @bg-color-shade-1;
+    color: @color-white-3;
     font-size: 35px;
     padding-left: 20px;
     padding-right: 23px;
@@ -40,15 +31,23 @@ tooltip {
 
 /* windows menu */
 .xfce4-panel #tasklist-10 .horizontal button {
-    border-top: 4px solid unset;
-    border-bottom: 4px solid unset;
+    border-top: 4px solid @bg-color-shade-1;
+    border-bottom: 4px solid @bg-color-shade-1;
+}
 
+.xfce4-panel #tasklist-10 .horizontal button:hover {
+    border-top: 4px solid @bg-color-shade-2;
+    border-bottom: 4px solid @bg-color-shade-2;
 }
 
 .xfce4-panel #tasklist-10 .horizontal button:checked {
-    border-top: 4px solid unset;
+    border-top: 4px solid @bg-color-shade-1;
     border-bottom: 4px solid @color-white-3;
+}
 
+.xfce4-panel #tasklist-10 .horizontal button:checked:hover {
+    border-top: 4px solid @bg-color-shade-2;
+    border-bottom: 4px solid @color-white-3;
 }
 
 .tasklist button image {
